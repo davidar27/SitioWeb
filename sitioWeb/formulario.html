@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sobre Mi</title>
+</head>
+<body>
+    <header>
+        <img src="images/mi_foto.jpg" alt="Mi foto" class="imagen_perfil">
+        <h1 class="titulo_1">Sobre Mi</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre mi</a></li>
+            <li><a href="familia.html">Familia</a></li>
+            <li><a href="Mascotas.html">Mascotas</a></li>
+            <li><a href="formulario.html">Registro</a></li>
+        </ul>
+    </nav>
+
+    <div class="div_titulo_2">
+        <h2 class="titulo_2">Formulario</h2>
+    </div>
+
+    <section class="container_form">
+    <div class="formulario">
+        <form id="form">
+            <div class="input_group">
+                <div class="input_wrapper">
+                    <label for="nombre">Ingrese su Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required aria-label="Nombre">
+                </div>
+                <div class="input_wrapper">
+                    <label for="apellido">Ingrese sus Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" required aria-label="Apellido">
+                </div>
+            </div>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value=" "> </option>
+                <option value="mas">Masculino</option>
+                <option value="fem">Femenino</option>
+                <option value="otr">Otro...</option>
+            </select>
+
+            <div class="input_group">
+                <div class="input_wrapper">
+                    <label for="celular">Ingrese su Numero Celular:</label>
+                    <input type="tel" name="celular" id="celular" required aria-label="Número Celular">
+                </div>
+                <div class="input_wrapper">
+                    <label for="email">Ingrese su Email:</label>
+                    <input type="email" name="email" id="email" required aria-label="Email">
+                </div>
+            </div>
+
+            <label for="pass">Ingresa una contraseña:</label>
+            <input type="password" name="password" id="password" required aria-label="Contraseña" minlength="8">
+            
+            <div class="centrar">
+                <input type="submit" value="Ingresar">
+            </div>
+        </form>
+    </div>
+</section>
+
+<div class="div_titulo_2">
+    <h2 class="titulo_2">Tabla</h2>
+</div>
+
+<section class="container_table"> 
+    <table id="tablaForm">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Celular</th>
+                <th>Email</th>
+                <th>Género</th>
+                <th>Contraseña</th>
+            </tr>
+        </thead>
+        <tbody id="formSend"></tbody>
+    </table>
+</section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Sobre Mi</p>
+    </footer>
+</body>
+<script src="scripts/scriptform.js"></script>
+</html>

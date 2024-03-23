@@ -1,0 +1,233 @@
+/* Estilos del cuerpo */
+body {
+    font-family: 'Rockwell', serif;
+    margin: 30px;
+    padding: 0;
+    background-color: #f7f1e2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    margin-left: 15vw;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #000000de;
+    color: #ffffffe5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilos de la imagen de perfil */
+.imagen_perfil {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+/* Estilos de navegación */
+nav {
+    background-color: #83c4d4d3;
+    padding: 10px;
+    margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    background-color: #000000de;
+    border-radius: 10px;
+}
+
+nav ul li:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+nav ul li a {
+    display: block;
+    color: rgba(255, 255, 255, 0.767);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+/* Estilos del título y del contenedor */
+.div-titulo_2 {
+    background-color: #f4f5f7b6;
+    padding: 20px;
+}
+
+.titulo_2 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.container {
+    background-color: #f4f5f7b6;
+    padding: 20px;
+}
+
+
+
+/* Estilos del contenedor de mascotas */
+
+
+.mascotas {
+    border-radius: 10px;
+    margin: 20px;
+    padding: 3% 20px; 
+    flex-basis: calc(30% - 40px);
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 50px;
+    background-color: #f4f5f7b6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mascotas img {
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); 
+}
+
+
+/* Estilos del contenedor de información e imagen grande */
+.info {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.imagen_grande {
+    width: 50%; 
+    max-width: 400px; 
+    margin: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 1); 
+}
+
+.texto {
+    width: 50%; 
+    margin: 10px; 
+    font-size: 16px; 
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+
+
+.container_form {
+    background-color: #f4f5f7b6;
+    padding: 20px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    
+}
+
+form {
+    width: 430px; 
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.input_group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input_wrapper {
+    width: calc(50% - 10px); 
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="submit"]:hover {
+    background-color: #3d8d41;
+    transform: translateY(-2px);
+}
+
+form input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estilos del pie de página */
+footer {
+    background-color: #000000de;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container_table{
+    display: flex;
+    align-items: center;
+    padding: 2vw;
+}
+.container_table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
